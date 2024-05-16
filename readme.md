@@ -16,7 +16,9 @@ Working with APIs posed a challenge, especially in handling asynchronous request
 
 ## Additional Features
 -**Image Search**: Users can search for images related to their queries using the Unsplash API.
+
 -**Speech Recognition**: Implemented speech recognition functionality to allow users to input queries verbally.
+
 -**Text-to-Speech**: Converted search results into speech format using text-to-speech functionality for accessibility.
 
 ## Installation
