@@ -9,7 +9,14 @@ This project is a multi-search engine where users can input their queries and se
 The application allows users to input their search query and choose between different search options. It also includes additional features like image search, speech recognition for input, and text-to-speech for query results.
 
 ## Technologies Used
- HTML, CSS, JavaScript
+
+- HTML, CSS, and JavaScript for the front-end development
+- Google Custom Search API for Google search integration
+- Wikipedia API for Wikipedia search integration
+- Gemini AI model from Google for advanced AI-powered search
+- [Markdown-it](https://github.com/markdown-it/markdown-it) library for rendering Markdown content
+- [Prism.js](https://prismjs.com/) for code syntax highlighting
+
 
 ## Difficulty Faced
 Working with APIs posed a challenge, especially in handling asynchronous requests and parsing the received data. Implementing storage for search history required managing local storage efficiently to maintain user data across sessions.
