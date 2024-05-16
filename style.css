@@ -11,6 +11,7 @@ html{
 }
 #wrapper{
     display: flex;
+    align-items: start;
 }
 
 .sidebar{
@@ -22,10 +23,12 @@ html{
     padding: 25px 15px;
     transition: all 0.5s;
     position: fixed;
+    /* width: 12%; */
     bottom: 0;
     left: 0;
 
     z-index: 1;
+  
 }
 .sidebar img{
     width: 20px;
@@ -88,6 +91,7 @@ transition: all 0.3s;
     flex: 1;
     padding-bottom:15vh ;
     position: relative;
+    
 }
 .main .nav{
     display: flex;
@@ -96,6 +100,21 @@ transition: all 0.3s;
     font-size: 22px;
     padding: 20px;
     color: #585858;
+    
+}
+/* .main .nav .logo{
+    width: 150px;
+    margin-left: 12%;
+    border-radius: 0%;
+} */
+.main .nav p{
+    font-size: 30px;
+    margin-left: 12%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.main .nav p:hover{
+    text-decoration: underline;
 }
 .main .nav img{
     width: 40px;
@@ -221,6 +240,7 @@ transition: all 0.3s;
 }
 .result-title .speaker:hover{
     background-color: #ece9e9;
+    /* background-color: #f7d2c7; */
 }
 
 .result-title img{
@@ -263,6 +283,44 @@ transition: all 0.3s;
    
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border: none;
+    background-color: #ffffff;
+    color: #0c0c0c;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid gray;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .button:hover {
+    background-color: #ebebeb;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+   .selectedBtn {
+    background-color: #686665;
+    color: rgb(243, 240, 240);
+  } 
+  .selectedBtn:hover{
+    color: #0c0c0c;
+  }
+  /* .button.active:hover {
+    background-color: #218838;
+  } */
+  
+
 pre{
     background-color: rgb(24, 23, 23);
     color: #dfdede;
@@ -285,3 +343,257 @@ pre{
         transform: rotate(360deg);
     }
 }
+
+ /* google api css */
+
+ .url-btn {
+    padding: 8px 16px;
+    background-color: lightcoral;
+    margin-top: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #282828;
+ }
+ .url-btn:hover{
+    background-color: rgb(211, 81, 81);
+ }
+ .result-container{
+    max-width: 850px;
+    padding: 20px 20px;
+    margin: auto;
+    margin-top: 2rem;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    
+
+ }
+ .result-container h3{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+ }
+
+/* wiki search css */
+  .head{
+    color: rgb(243, 69, 69);
+  }
+ .result {
+    border-radius: 0.5rem;
+    /* background-color: #faf9fa; */
+    padding: 1rem 2rem;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  }
+  .result a {
+    text-decoration: none;
+    color: #282828;
+  }
+  .result a:hover {
+    text-decoration: underline;
+  }
+  .result a:active {
+    color: #00e;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  .dataAndTime {
+    color: #555;
+    font-size: 10px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    color: #333;
+  }
+  .result hr{
+    margin-top: 0.5rem;
+  }
+
+  /* google search api css */
+
+  .google-search-container{
+    max-width: 850px;
+    padding: 10px 10px;
+    margin: auto;
+    margin-top: 2rem;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    /* border: 2px solid red; */
+    font-family: Roboto;
+  }
+ .header-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.25rem;
+ }
+ .imgIcon-div{
+    width: 30px;
+    height: 30px;
+ }
+ .imgIcon-div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+ }
+ .title-div{
+    color: #4d4b4b;
+ }
+ .title-div a{
+    color: #4d4b4b;
+    text-decoration: none;
+ }
+ .description-div{
+    padding-left: 10px;
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+ }
+ .description-div a{
+    text-decoration: none;
+ }
+ .description-div a:hover{
+    text-decoration: underline;
+    color: #00e;
+ }
+ .description-div h2{
+    font-size: 22px;
+    color: rgb(60, 60, 240);
+    margin-bottom: 0.25rem;
+ }
+ .description-div p {
+    font-size: 16px;
+ }
+
+ /* dark-mode */
+
+ .sidebar-dark{
+    background-color: #1E1F20;
+    color: #e3e3e3;    
+ }
+ .sidebar .recent-entry-dark {
+    color: #e3e3e3;
+}
+.sidebar .recent-entry-dark:hover{
+    background-color: #454546;
+}
+
+
+/* .sidebar .new-chat-dark{
+    background-color:  #1E1F20;
+    border: 2px solid #2d2e2e;
+}
+
+.main{
+    background-color: #131314;
+}
+.main-container .card-dark{
+    background-color: #1e1f20;
+   
+}
+.main-container .card-dark p{
+    color: #e3e3e3;
+}
+.main-container .card-dark:hover{
+    background-color: #333537;
+}
+.main-container .card-dark img{
+    background-color: #252525;
+}
+.search-box-dark{
+    background-color: #1E1F20;
+}
+.search-box-dark input{
+    color: #dfdede;
+}
+
+.result-container-dark{
+    color: #969797 !important;
+}
+.title-div-dark , .title-div-dark a{
+    color: #868584;
+}
+
+.description-div-dark h2{
+    color: rgb(95, 95, 247);
+}
+
+.description-div-dark a:hover{
+    color: rgb(95, 95, 247);
+}
+
+.result-dark a{
+    color: #a6a8a8;
+}
+.title-dark , .dataAndTime-dark , .description-dark{
+    color: #6d6c6c;
+} */
+
+@media screen and (max-width:1300px){
+  .main{
+    margin-left: 15%;
+  }
+ }
+ @media screen and (max-width:1150px){
+    .main{
+      margin-left: 20%;
+    }
+   }
+   @media screen and (max-width:1000px){
+    .main{
+      margin-left: 25%;
+    }
+   }
+   @media screen and (max-width:850px){
+    .main{
+      margin-left: 30%;
+    }
+   }
+@media screen and (max-width:700px){
+   .sidebar{
+    display: none;
+   }
+   .main{
+     margin-left: 0%;
+   }
+   .main .nav p{
+    margin-left: 0%;
+   }
+}
+@media screen and (max-width:550px){
+    .result-container{
+        padding: 10px;
+    }
+    .result{
+        padding: 0;
+    }
+    .google-search-container{
+        padding: 0;
+    }
+    .result-data{
+        gap: 10px;
+    }
+    .result-data img{
+        width: 30px;
+    }
+ }
+ 
+ @media screen and (max-width:450px){
+    .main-container .greet{
+        font-size: 32px;
+    }
+    .main-bottom{
+        padding: 0;
+    }
+    .button{
+        padding: 8px 12px;
+        margin: 0px 5px;
+    }
+ }
+ 
